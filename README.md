@@ -1,7 +1,7 @@
 # Starlette Bridge
 
 <p align="center">
-  <a href="https://starlette-bridge.tarsild.io"><img width="420px" src="https://www.starlette.io/img/starlette.png" alt='Saffier'></a>
+  <a href="https://starlette-bridge.tarsild.io"><img width="420px" src="https://www.starlette.io/img/starlette.png" alt='Starlette Bridge'></a>
 </p>
 
 <p align="center">
@@ -81,7 +81,7 @@ the new structure required by Starlette for managing events.
 These two pieces of functionality are also supported by the bridge making sure that what you had
 in the past, still remains working as is without changing the syntax.
 
-Let us see an example how it works. We will be using [Saffier](https://saffier.tarsild.io) because
+Let us see an example how it works. We will be using [Starlette Bridge](https://saffier.tarsild.io) because
 already contains events we want to use.
 
 #### on_startup/on_shutdown
@@ -172,5 +172,10 @@ models = Registry(database=database)
 app = Starlette()
 app.add_event_handler("startup", database.connect)
 app.add_event_handler("shutdown", database.disconnect)
-
 ```
+
+## Notes
+
+This is from the same author of [Esmerald](https://esmerald.dev),
+[Starlette Bridge](https://saffier.tarsild.io) and [Asyncz](https://asyncz.tarsild.io). Have a look around
+those techologies as well 😄.

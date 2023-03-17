@@ -1,23 +1,23 @@
 # Contributing
 
-Thank you for showing interes in contributing to Saffier. There are many ways you can help and contribute to the
+Thank you for showing interes in contributing to Starlette Bridge. There are many ways you can help and contribute to the
 project.
 
-* Try Saffier and [report bugs and issues](https://github.com/tarsil/starlette_bridge/issues/new) you find.
-* [Implement new features](https://github.com/tarsil/starlette_bridge/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
-* Help othes by [reviewing pull requests](https://github.com/tarsil/starlette_bridge/pulls)
+* Try Starlette Bridge and [report bugs and issues](https://github.com/tarsil/starlette-bridge/issues/new) you find.
+* [Implement new features](https://github.com/tarsil/starlette-bridge/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+* Help othes by [reviewing pull requests](https://github.com/tarsil/starlette-bridge/pulls)
 * Help writting documentation
 * Use the discussions and actively participate on them.
-* Become an contributor by helping Saffier growing and spread the words across small, medium, large or any company
+* Become an contributor by helping Starlette Bridge growing and spread the words across small, medium, large or any company
 size.
 
 ## Reporting possible bugs and issues
 
-It is natural that you might find something that Saffier should support or even experience some sorte of unexpected
+It is natural that you might find something that Starlette Bridge should support or even experience some sorte of unexpected
 behaviour that needs addressing.
 
 The way we love doing things is very simple, contributions should start out with a
-[discussion](https://github.com/tarsil/starlette_bridge/discussions). The potential bugs shall be raised as "Potential Issue"
+[discussion](https://github.com/tarsil/starlette-bridge/discussions). The potential bugs shall be raised as "Potential Issue"
 in the discussions, the feature requests may be raised as "Ideas".
 
 We can then decide if the discussion needs to be escalated into an "Issue" or not.
@@ -37,18 +37,18 @@ it clear to understand and get the required help.
 
 ## Development
 
-To develop for Saffier, create a fork of the [Saffier repository](https://github.com/tarsil/starlette_bridge) on GitHub.
+To develop for Starlette Bridge, create a fork of the [Starlette Bridge repository](https://github.com/tarsil/starlette-bridge) on GitHub.
 
 After, clone your fork with the follow command replacing `YOUR-USERNAME` wih your GitHub username:
 
 ```shell
-$ git clone https://github.com/YOUR-USERNAME/starlette_bridge
+$ git clone https://github.com/YOUR-USERNAME/starlette-bridge
 ```
 
 ### Install the project dependencies
 
 ```shell
-$ cd starlette_bridge
+$ cd starlette-bridge
 $ scripts/install
 ```
 
@@ -60,7 +60,7 @@ To run the tests, use:
 $ scripts/test
 ```
 
-Because Saffier uses pytest, any additional arguments will be passed. More info within the
+Because Starlette Bridge uses pytest, any additional arguments will be passed. More info within the
 [pytest documentation](https://docs.pytest.org/en/latest/how-to/usage.html)
 
 For example, to run a single test_script:
@@ -72,12 +72,12 @@ $ scripts/test tests/test_apiviews.py
 To run the linting, use:
 
 ```shell
-$ scripts/lint
+$ scripts/format
 ```
 
 ### Documentation
 
-Improving the documentation is quite easy and it is placed inside the `starlette_bridge/docs` folder.
+Improving the documentation is quite easy and it is placed inside the `starlette-bridge/docs` folder.
 
 To start the docs, run:
 
@@ -85,7 +85,7 @@ To start the docs, run:
 $ scripts/docs
 ```
 
-## Building Saffier
+## Building Starlette Bridge
 
 To build a package locally, run:
 
@@ -103,15 +103,15 @@ It will install the requirements and create a local build in your virtual enviro
 
 ## Releasing
 
-*This section is for the maintainers of `Saffier`*.
+*This section is for the maintainers of `Starlette Bridge`*.
 
-### Building the Saffier for release
+### Building the Starlette Bridge for release
 
 Before releasing a new package into production some considerations need to be taken into account.
 
 * **Changelog**
     * Like many projects, we follow the format from [keepchangelog](https://keepachangelog.com/en/1.0.0/).
-    * [Compare](https://github.com/tarsil/starlette_bridge/compare/) `main` with the release tag and list of the entries
+    * [Compare](https://github.com/tarsil/starlette-bridge/compare/) `main` with the release tag and list of the entries
 that are of interest to the users of the framework.
         * What **must** go in the changelog? added, changed, removed or deprecated features and the bug fixes.
         * What is **should not go** in the changelog? Documentation changes, tests or anything not specified in the
@@ -124,7 +124,7 @@ point above.
 
 #### Releasing
 
-Once the `release` PR is merged, create a new [release](https://github.com/tarsil/starlette_bridge/releases/new)
+Once the `release` PR is merged, create a new [release](https://github.com/tarsil/starlette-bridge/releases/new)
 that includes:
 
 Example:

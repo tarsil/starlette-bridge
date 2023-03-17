@@ -7,7 +7,7 @@ from starlette.responses import Response
 from starlette.routing import BaseRoute
 from starlette.types import Lifespan
 
-from starlette_bridge.context_managers import AyncLifespanContextManager
+from starlette_bridge.routing import BridgeRouter
 
 AppType = typing.TypeVar("AppType", bound="Starlette")
 
@@ -35,41 +35,30 @@ class Starlette(BaseStarlette):
         on_startup: typing.Optional[typing.Sequence[typing.Callable]] = None,
         on_shutdown: typing.Optional[typing.Sequence[typing.Callable]] = None,
         lifespan: typing.Optional[Lifespan["AppType"]] = None,
+        redirect_slashes: bool = True,
     ) -> None:
-        assert lifespan is None or (
-            on_startup is None and on_shutdown is None
-        ), "Use either 'lifespan' or 'on_startup'/'on_shutdown', not both."
-
-        self.lifespan = self.handle_lifespan_events(
-            on_startup=on_startup, on_shutdown=on_shutdown, lifespan=lifespan
-        )
-
         super().__init__(
             debug=debug,
             routes=routes,
             middleware=middleware,
             exception_handlers=exception_handlers,
-            lifespan=self.lifespan,
+            lifespan=lifespan,
         )
 
-    def handle_lifespan_events(
-        self,
-        on_startup: typing.Optional[typing.Sequence[typing.Callable]] = None,
-        on_shutdown: typing.Optional[typing.Sequence[typing.Callable]] = None,
-        lifespan: typing.Optional[Lifespan["AppType"]] = None,
-    ) -> typing.Any:
-        """Handles with the lifespan events in the new Starlette format of lifespan.
-        This adds a mask that keeps the old `on_startup` and `on_shutdown` events variable
-        declaration for legacy and comprehension purposes and build the async context manager
-        for the lifespan.
-        """
-        if on_startup or on_shutdown:
-            return AyncLifespanContextManager(on_startup=on_startup, on_shutdown=on_shutdown)
-        elif lifespan:
-            return lifespan
-        return None
+        # Apply the Bridge router
+        self.router = BridgeRouter(
+            routes=routes,
+            on_startup=on_startup,
+            on_shutdown=on_shutdown,
+            lifespan=lifespan,
+            redirect_slashes=redirect_slashes,
+        )
 
     def on_event(self, event_type: str) -> typing.Callable:  # pragma: nocover
+        """
+        Add an event on_startup and on_shutdown with Esmerald underlying
+        implementation of the lifespan.
+        """
         return self.router.on_event(event_type)
 
     def add_event_handler(

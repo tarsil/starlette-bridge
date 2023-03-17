@@ -1,0 +1,26 @@
+#!/bin/sh -e
+
+if [ -d 'dist' ] ; then
+    rm -r dist
+fi
+if [ -d 'site' ] ; then
+    rm -r site
+fi
+if [ -d 'htmlcov' ] ; then
+    rm -r htmlcov
+fi
+if [ -d 'starlette_bridge.egg-info' ] ; then
+    rm -r starlette_bridge.egg-info
+fi
+if [ -d '.hypothesis' ] ; then
+    rm -r .hypothesis
+fi
+if [ -d '.mypy_cache' ] ; then
+    rm -r .mypy_cache
+fi
+if [ -d '.pytest_cache' ] ; then
+    rm -r .pytest_cache
+fi
+if [ -d '.ruff_cache' ] ; then
+    rm -r .ruff_cache
+fi

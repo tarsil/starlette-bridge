@@ -1,24 +1,24 @@
 # Saffier
 
 <p align="center">
-  <a href="https://starlette-bridge.tarsild.io"><img src="https://res.cloudinary.com/dymmond/image/upload/v1675104815/Saffier/logo/logo_dowatx.png" alt='Saffier'></a>
+  <a href="https://starlette-bridge.tarsild.io"><img src="https://www.starlette.io/img/starlette.png" alt='Saffier'></a>
 </p>
 
 <p align="center">
-    <em>🚀 The only Async ORM you need. 🚀</em>
+    <em>🚀 The Starlette events bridge you need. 🚀</em>
 </p>
 
 <p align="center">
-<a href="https://github.com/tarsil/starlette_bridge/workflows/Test%20Suite/badge.svg?event=push&branch=main" target="_blank">
-    <img src="https://github.com/tarsil/starlette_bridge/workflows/Test%20Suite/badge.svg?event=push&branch=main" alt="Test Suite">
+<a href="https://github.com/tarsil/starlette-bridge/workflows/Test%20Suite/badge.svg?event=push&branch=main" target="_blank">
+    <img src="https://github.com/tarsil/starlette-bridge/workflows/Test%20Suite/badge.svg?event=push&branch=main" alt="Test Suite">
 </a>
 
-<a href="https://pypi.org/project/starlette_bridge" target="_blank">
-    <img src="https://img.shields.io/pypi/v/starlette_bridge?color=%2334D058&label=pypi%20package" alt="Package version">
+<a href="https://pypi.org/project/starlette-bridge" target="_blank">
+    <img src="https://img.shields.io/pypi/v/starlette-bridge?color=%2334D058&label=pypi%20package" alt="Package version">
 </a>
 
-<a href="https://pypi.org/project/starlette_bridge" target="_blank">
-    <img src="https://img.shields.io/pypi/pyversions/starlette_bridge.svg?color=%2334D058" alt="Supported Python versions">
+<a href="https://pypi.org/project/starlette-bridge" target="_blank">
+    <img src="https://img.shields.io/pypi/pyversions/starlette-bridge.svg?color=%2334D058" alt="Supported Python versions">
 </a>
 </p>
 
@@ -26,7 +26,7 @@
 
 **Documentation**: [https://starlette-bridge.tarsild.io](https://starlette-bridge.tarsild.io) 📚
 
-**Source Code**: [https://github.com/tarsil/starlette_bridge](https://github.com/tarsil/starlette_bridge)
+**Source Code**: [https://github.com/tarsil/starlette-bridge](https://github.com/tarsil/starlette-bridge)
 
 ---
 

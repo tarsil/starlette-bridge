@@ -1,24 +1,24 @@
-# Saffier
+# Starlette Bridge
 
 <p align="center">
-  <a href="https://starlette-bridge.tarsild.io"><img src="https://res.cloudinary.com/dymmond/image/upload/v1675104815/Saffier/logo/logo_dowatx.png" alt='Saffier'></a>
+  <a href="https://starlette-bridge.tarsild.io"><img width="420px" src="https://www.starlette.io/img/starlette.png" alt='Starlette Bridge'></a>
 </p>
 
 <p align="center">
-    <em>🚀 The only Async ORM you need. 🚀</em>
+    <em>🚀 The Starlette events bridge that you need. 🚀</em>
 </p>
 
 <p align="center">
-<a href="https://github.com/tarsil/starlette_bridge/workflows/Test%20Suite/badge.svg?event=push&branch=main" target="_blank">
-    <img src="https://github.com/tarsil/starlette_bridge/workflows/Test%20Suite/badge.svg?event=push&branch=main" alt="Test Suite">
+<a href="https://github.com/tarsil/starlette-bridge/workflows/Test%20Suite/badge.svg?event=push&branch=main" target="_blank">
+    <img src="https://github.com/tarsil/starlette-bridge/workflows/Test%20Suite/badge.svg?event=push&branch=main" alt="Test Suite">
 </a>
 
-<a href="https://pypi.org/project/starlette_bridge" target="_blank">
-    <img src="https://img.shields.io/pypi/v/starlette_bridge?color=%2334D058&label=pypi%20package" alt="Package version">
+<a href="https://pypi.org/project/starlette-bridge" target="_blank">
+    <img src="https://img.shields.io/pypi/v/starlette-bridge?color=%2334D058&label=pypi%20package" alt="Package version">
 </a>
 
-<a href="https://pypi.org/project/starlette_bridge" target="_blank">
-    <img src="https://img.shields.io/pypi/pyversions/starlette_bridge.svg?color=%2334D058" alt="Supported Python versions">
+<a href="https://pypi.org/project/starlette-bridge" target="_blank">
+    <img src="https://img.shields.io/pypi/pyversions/starlette-bridge.svg?color=%2334D058" alt="Supported Python versions">
 </a>
 </p>
 
@@ -26,7 +26,7 @@
 
 **Documentation**: [https://starlette-bridge.tarsild.io](https://starlette-bridge.tarsild.io) 📚
 
-**Source Code**: [https://github.com/tarsil/starlette_bridge](https://github.com/tarsil/starlette_bridge)
+**Source Code**: [https://github.com/tarsil/starlette-bridge](https://github.com/tarsil/starlette-bridge)
 
 ---
 
@@ -54,3 +54,68 @@ To install Starlette Bridge, simply run:
 ```shell
 $ pip install starlette-bridge
 ```
+
+## How to use
+
+This is actually very simple to do it. You don't need to do anything particularly difficult, in
+fact, you only need to update where your Starlette object comes from.
+
+```python hl_lines="1"
+{! ../docs_src/quickstart.py !}
+```
+
+And that is pretty much it.
+
+### How does it work
+
+Starlette bridge simply maps your `on_startup` and `on_shutdown` events and converts them into
+the new `lifespan` async generator from `Starlette`.
+
+This way you can continue to use your preferred way of assembling the events while maintaining
+the new structure required by Starlette for managing events.
+
+### on_event and add_event_handler
+
+These two pieces of functionality are also supported by the bridge making sure that what you had
+in the past, still remains working as is without changing the syntax.
+
+Let us see an example how it works. We will be using [Starlette Bridge](https://saffier.tarsild.io) because
+already contains events we want to use.
+
+#### on_startup/on_shutdown
+
+Using the `on_startup` and `on_shutdown`.
+
+```python hl_lines="3 10-11"
+{! ../docs_src/events.py !}
+```
+
+#### Lifespan
+
+You can, of course, use the lifespan as well.
+
+```python hl_lines="5 20"
+{! ../docs_src/lifespan.py !}
+```
+
+#### on_event and add_event_handler
+
+As mentioned before, those two functionalities are also available.
+
+##### on_event
+
+```python hl_lines="3 12 17"
+{! ../docs_src/on_event.py !}
+```
+
+##### add_event_handler
+
+```python hl_lines="3 10-11"
+{! ../docs_src/add_event_handler.py !}
+```
+
+## Notes
+
+This is from the same author of [Esmerald](https://esmerald.dev),
+[Starlette Bridge](https://saffier.tarsild.io) and [Asyncz](https://asyncz.tarsild.io). Have a look around
+those techologies as well 😄.

@@ -1,34 +1,27 @@
-# Help Saffier
+# Help Starlette Bridge
 
-Do you like **Saffier** and would like to help Saffier, other userd and the author?
+Do you like **Starlette Bridge** and would like to help Starlette Bridge, other userd and the author?
 
-## 🐦 Follow Saffier and Esmerald on Twitter
+## 🐦 Follow Starlette Bridge and Esmerald on Twitter
 
 [Follow @apiesmerald on Twitter](https://twitter.com/apiesmerald) to get the latest news.
 
-## ⭐ Star **Saffier** on GitHub
+## ⭐ Star **Starlette Bridge** on GitHub
 
-Giving a start to Saffier is very simple and helps promoting the work across the developers around the world.
+Giving a start to Starlette Bridge is very simple and helps promoting the work across the developers around the world.
 
 The button is located at the top right.
 
-[https://github.com/tarsil/starlette_bridge](https://github.com/tarsil/starlette_bridge).
+[https://github.com/tarsil/starlette-bridge](https://github.com/tarsil/starlette-bridge).
 
 This will help spreading the word about the tool and how helpful has been.
 
 ## 👀 Follow the GitHub repo
 
-Following the GitHub repo will allow you to "watch" for any new release of Saffier and be always up to date.
+Following the GitHub repo will allow you to "watch" for any new release of Starlette Bridge and be always up to date.
 
 You can click on "***watch***" and select "***custom***" -> "***Releases***"or any other you may find particular
 interesting to you.
-
-## 💬 Join the official Saffier discord channel
-
-Our official chat is on discord, we find it very useful and free for people to discuss issues, helping and contributing
-in a more organised manner.
-
-<a href="https://discord.gg/eMrM9sWWvu" target="_blank">Saffier discord channel</a>. Join us! 🗸
 
 ## 🔥 Sponsor the author
 
@@ -41,12 +34,6 @@ He can afterwards go for a coffee☕, on him, to say thanks🙏.
 
 You can become a [**Special One**](https://github.com/sponsors/tarsil/sponsorships?sponsor=tarsil&tier_id=230059&preview=false)
 or a [**Legend**](https://github.com/sponsors/tarsil/sponsorships?sponsor=tarsil&tier_id=230042&preview=false)
-sponsor for Saffier.
+sponsor for Starlette Bridge.
 
-## ⚙️ Sponsor the tools that made Saffier possible
-
-As you have seen in the documentation, Saffier stands on the shoulders of giants, Starlette and Pydantic.
-
-You can also sponsor:
-
-* <a href="https://github.com/sponsors/samuelcolvin" class="external-link" target="_blank">Samuel Colvin (Pydantic)</a>
+This is also for Esmerald, Starlette Bridge, Asyncz and any other solution 😀.

@@ -1,5 +1,5 @@
-site_name: Saffier
-site_description: The only python ORM you will ever need.
+site_name: Starlette Bridge
+site_description: The Starlette events bridge that you need.
 site_url: https://starlette-bridge.tarsild.io
 
 theme:
@@ -8,7 +8,7 @@ theme:
   language: en
   palette:
     - scheme: "default"
-      primary: "purple"
+      primary: "green"
       accent: "amber"
       media: "(prefers-color-scheme: light)"
       toggle:
@@ -21,15 +21,13 @@ theme:
       toggle:
         icon: "material/lightbulb-outline"
         name: "Switch to light mode"
-  favicon: statics/images/favicon.ico
-  logo: statics/images/logo-white.svg
   features:
     - search.suggest
     - search.highlight
     - content.tabs.link
 
-repo_name: tarsil/starlette_bridge
-repo_url: https://github.com/tarsil/starlette_bridge
+repo_name: tarsil/starlette-bridge
+repo_url: https://github.com/tarsil/starlette-bridge
 edit_uri: ""
 plugins:
   - search
@@ -37,7 +35,7 @@ plugins:
       data: data
 
 nav:
-  - Saffier: "index.md"
+  - Starlette Bridge: "index.md"
   - Contributing: "contributing.md"
   - Sponsorship: "sponsorship.md"
   - Release Notes: "release-notes.md"

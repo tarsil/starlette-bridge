@@ -21,15 +21,13 @@ theme:
       toggle:
         icon: "material/lightbulb-outline"
         name: "Switch to light mode"
-  favicon: statics/images/favicon.ico
-  logo: statics/images/logo-white.svg
   features:
     - search.suggest
     - search.highlight
     - content.tabs.link
 
-repo_name: tarsil/starlette_bridge
-repo_url: https://github.com/tarsil/starlette_bridge
+repo_name: tarsil/starlette-bridge
+repo_url: https://github.com/tarsil/starlette-bridge
 edit_uri: ""
 plugins:
   - search

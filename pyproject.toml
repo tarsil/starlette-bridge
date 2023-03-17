@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "starlette_bridge"
-description = "The Starlette events bridge you need."
-long_description = "The Starlette events bridge you need."
+description = "The Starlette events bridge that you need."
+long_description = "The Starlette events bridge that you need."
 readme = "README.md"
 requires-python = ">=3.8"
 dynamic = ['version']

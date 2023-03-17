@@ -1,5 +1,5 @@
-site_name: Saffier
-site_description: The only python ORM you will ever need.
+site_name: Starlette Bridge
+site_description: The Starlette events bridge that you need.
 site_url: https://starlette-bridge.tarsild.io
 
 theme:
@@ -8,7 +8,7 @@ theme:
   language: en
   palette:
     - scheme: "default"
-      primary: "purple"
+      primary: "green"
       accent: "amber"
       media: "(prefers-color-scheme: light)"
       toggle:

@@ -1,11 +1,12 @@
-# Saffier
+# Starlette Bridge
 
 <p align="center">
-  <a href="https://starlette-bridge.tarsild.io"><img src="https://www.starlette.io/img/starlette.png" alt='Saffier'></a>
+  <a href="https://starlette-bridge.tarsild.io"><img width="420px" src="https://www.starlette.io/img/starlette.png" alt='Saffier'></a>
 </p>
 
+
 <p align="center">
-    <em>🚀 The Starlette events bridge you need. 🚀</em>
+    <em>🚀 The Starlette events bridge that you need. 🚀</em>
 </p>
 
 <p align="center">

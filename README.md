@@ -177,5 +177,5 @@ app.add_event_handler("shutdown", database.disconnect)
 ## Notes
 
 This is from the same author of [Esmerald](https://esmerald.dev),
-[Starlette Bridge](https://saffier.tarsild.io) and [Asyncz](https://asyncz.tarsild.io). Have a look around
+[Saffier](https://saffier.tarsild.io) and [Asyncz](https://asyncz.tarsild.io). Have a look around
 those techologies as well 😄.

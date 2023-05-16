@@ -117,5 +117,5 @@ As mentioned before, those two functionalities are also available.
 ## Notes
 
 This is from the same author of [Esmerald](https://esmerald.dev),
-[Starlette Bridge](https://saffier.tarsild.io) and [Asyncz](https://asyncz.tarsild.io). Have a look around
+[Saffier](https://saffier.tarsild.io) and [Asyncz](https://asyncz.tarsild.io). Have a look around
 those techologies as well 😄.

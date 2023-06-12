@@ -1,5 +1,11 @@
 # Release Notes
 
+## 0.3.0
+
+### Updated
+
+- Added the latest version of starlette to 0.28.0.
+
 ## 0.2.0
 
 ### Fixed

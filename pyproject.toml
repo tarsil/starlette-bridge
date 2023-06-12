@@ -37,7 +37,7 @@ classifiers = [
     "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
     "Topic :: Internet :: WWW/HTTP",
 ]
-dependencies = ["starlette>=0.27.0,<0.30.0"]
+dependencies = ["starlette>=0.28.0,<0.1.0"]
 keywords = [
     "api",
     "rest",
